@@ -140,7 +140,7 @@ $nofak = $i['nofak'];
                       </table>
                       <hr>
 
-                      <table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">
+                      <table class="table table-bordered table-condensed" style="font-size:10px;" id="mydata">
                                     
                                     <thead class="text-primary">
                                         <tr>

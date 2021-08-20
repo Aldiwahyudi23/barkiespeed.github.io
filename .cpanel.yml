@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/u1021663/user/public_html/
+    - /bin/cp -R application $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R assetss $DEPLOYPATH
+    - /bin/cp -R db $DEPLOYPATH
+    - /bin/cp -R system $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp .cpanel.yml $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp .editorconfig $DEPLOYPATH
+    - /bin/cp .gitignore $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp composer.lock $DEPLOYPATH
+    - /bin/cp readme.rst $DEPLOYPATH
+    - /bin/cp READ ME.txt $DEPLOYPATH
+    - /bin/cp license.txt $DEPLOYPATH
+    - /bin/cp contributing.md $DEPLOYPATH

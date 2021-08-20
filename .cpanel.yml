@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/u1021663/user/public_html/
+    - export DEPLOYPATH=/u1021663/user/public_html/barkiespeed.online
     - /bin/cp -R application $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R assetss $DEPLOYPATH

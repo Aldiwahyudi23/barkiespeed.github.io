@@ -147,11 +147,7 @@ $nofak = $i['nofak'];
                                             <th style="width:70px;">No</th>
                                             <th >Status</th>
                                             <th >Nama Barang</th>
-                                              <th >Harga Jual</th>
                                               <th>Qty</th>
-                                              <th>Diskon</th>
-                                              <th>Total</th>
-                                              <th>Mekanik</th>
                                               <th>Ket</th>
 											 
                                         </tr>
@@ -183,11 +179,7 @@ $nofak = $i['nofak'];
                                       <td><?php echo $no; ?></td>
                                       <td><?php echo $status; ?></td>
                                       <td><?php echo $d_nama; ?></td>
-                                      <td>Rp. <?php echo number_format ($harjul); ?></td>
                                       <td><?php echo $qty; ?></td>
-                                      <td><?php echo $diskon; ?></td>
-                                      <td>Rp. <?php echo number_format($d_total);?></td>
-                                      <td><?php echo $author ?></td>
                                       <td><?php echo $ket ?></td>
                                       <td><a href="<?php echo base_url().'admin/dataharian/edit_jual/'.$id; ?>" class="btn btn-sm btn-primary"><span class=""></span>lihat</a>
                                      </td>

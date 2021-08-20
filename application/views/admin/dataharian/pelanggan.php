@@ -148,7 +148,7 @@ $nofak = $i['nofak'];
                                             <th >Status</th>
                                             <th >Nama Barang</th>
                                               <th>Qty</th>
-                                              <th>Ket</th>
+
 											 
                                         </tr>
                                     </thead>
@@ -180,7 +180,7 @@ $nofak = $i['nofak'];
                                       <td><?php echo $status; ?></td>
                                       <td><?php echo $d_nama; ?></td>
                                       <td><?php echo $qty; ?></td>
-                                      <td><?php echo $ket ?></td>
+
                                       <td><a href="<?php echo base_url().'admin/dataharian/edit_jual/'.$id; ?>" class="btn btn-sm btn-primary"><span class=""></span>lihat</a>
                                      </td>
 									

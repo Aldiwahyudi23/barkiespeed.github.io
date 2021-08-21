@@ -177,11 +177,12 @@ foreach ($data->result_array() as $i):
 	$kendaraan = $i['kendaraan'];
 	$type = $i['type'];
 	$nopol = $i['nopol'];
+	$nofak = $i['nofak'];
 
 	?>
 																												  									<tr>
 																												  										<td><?php echo $no; ?></td>
-																												  										<td>  <a href="#" class="pull-LIGHT"><small><?php echo $customer_nama; ?></small></a></td>
+																												  										<td>  <a href="<?php echo base_url().'admin/dataharian/pelanggan/'.$nofak; ?>" class="pull-LIGHT"><small><?php echo $customer_nama; ?></small></a></td>
 																												  										<td><?php echo $nohp; ?></td>
 																												  										<td><?php echo $kendaraan; ?>-<?php echo $type; ?></td>
 																												  						

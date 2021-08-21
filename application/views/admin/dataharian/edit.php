@@ -87,8 +87,8 @@ $this->load->view('template/v_bread');
         
         
         ?>
-        <div>
 	<a class="btn btn-xs btn-danger" data-toggle="modal" data-target="#ModalHapus<?php echo $id; ?>"><span class="fa fa-trash"> Hapus</span></a>
+        <div>
         </div>
                                 <br>
                              <table class="table table-striped" style="font-size:14px;">
@@ -158,7 +158,7 @@ $this->load->view('template/v_bread');
                       </table>
                       <br>
                       
-				                 <center>   <button type="submit" class="btn btn-lg btn-success " style="width:710px;margin-bottom:30px;">Selesai</button></center>
+				                 <center>   <button type="submit" class="btn btn-lg btn-success " style="width:250px;margin-bottom:30px;">Selesai</button></center>
 				           
           </form>
   				<!-- /.box -->

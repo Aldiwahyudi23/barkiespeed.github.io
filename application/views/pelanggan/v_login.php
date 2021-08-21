@@ -35,7 +35,7 @@
 	                        	<input class="form-control" type="text" name="username" placeholder="No Faktur" required>
 				                <input class="form-control" type="password" name="password" placeholder="Kata Sandi" style="margin-bottom:1px;" required>
 				                <div class="action">
-				                    <button type="submit" class="btn btn-lg btn-success " style="width:310px;margin-bottom:30px;">MASUK</button>
+				                    <button type="submit" class="btn btn-lg btn-success " style="width:250px;margin-bottom:30px;">MASUK</button>
 				                </div>
 	                        </form>
 								    

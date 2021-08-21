@@ -36,6 +36,7 @@
 				                <input class="form-control" type="password" name="password" placeholder="Kata Sandi" style="margin-bottom:1px;" required>
 				                <div class="action">
 				                    <button type="submit" class="btn btn-lg btn-success " style="width:250px;margin-bottom:30px;">MASUK</button>
+									<a href="<?php echo base_url('beranda')?>')">Kembali</a>
 				                </div>
 	                        </form>
 								    

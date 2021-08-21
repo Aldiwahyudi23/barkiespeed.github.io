@@ -4,8 +4,7 @@ $this->load->view('template/header');
 $this->load->view('template/menu')?>
 <main role="main">
 
-<section>
-
+<!--
 <div class="slider_img layout_two js-flickity" data-flickity-options='{ "autoPlay": 5500 }'>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -40,9 +39,10 @@ foreach ($slider->result_array() as $i):
   </a>
 </div>
 </div>
-</section>
+-->
+
 <div class="marketing">
-  <div class="container" style="background: white">
+  <div class="container" style="background: light">
     <?php $r = $statis->row_array()?>
     <div class="row featurette">
       <div class="col-md-12">

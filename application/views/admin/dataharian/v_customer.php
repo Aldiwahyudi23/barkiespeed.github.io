@@ -70,7 +70,7 @@ $this->load->view('template/v_bread');
   					</div>
 				  <?php }?>
   					<!-- /.box-header -->
-  					<div class="box-body table responsive ">
+  					<div class="box-body table-responsive">
   						<table id="example1" class="table table-striped" style="font-size:12px;">
   							<thead>
   								<tr>

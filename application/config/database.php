@@ -85,7 +85,6 @@ $db['default'] = array(
 	'username' => 'u1021663_barkiespeed',
 	'password' => 'barkiespeed237',
 	'database' => 'u1021663_barkiespeed',
-/
 
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

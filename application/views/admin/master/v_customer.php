@@ -65,7 +65,7 @@ $this->load->view('template/v_bread');
   				
   					<!-- /.box-header -->
   					<div class="box-body">
-  						<table id="example1" class="table table-striped" style="font-size:14px;">
+  						<table id="example1" class="table table-striped table-responsive" style="font-size:14px;">
   							<thead>
   								<tr>
   									<th style="width:70px;">No</th>

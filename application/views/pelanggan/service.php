@@ -145,7 +145,7 @@ $satus = $i['deskripsi'];
                                 <center><h3><strong><?php echo $satus; ?></strong></h3></center>
                       </div>
                       <hr>
-                      <table class="table table-bordered table-condensed" style="font-size:12px;margin-top:10px;">
+                      <table class="table table-bordered table-condensed table-responsive" style="font-size:12px;margin-top:10px;">
                                     
                                     <thead class="text-primary">
                                         <tr>

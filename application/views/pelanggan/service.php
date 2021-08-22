@@ -146,7 +146,7 @@ $satus = $i['deskripsi'];
                       </div>
                       <hr>
                       <div class="box-body table responsive">
-                      <table class="table table-bordered table-condensed table-responsive" style="font-size:12px;margin-top:10px;">
+                      <table class="table table-bordered table-condensed" style="font-size:12px;margin-top:10px;">
                                     
                                     <thead class="text-primary">
                                         <tr>

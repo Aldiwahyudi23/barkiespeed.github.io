@@ -58,7 +58,7 @@ $this->load->view('template/v_bread');
                      <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#largeModal2"><span class="fa fa-plus"></span> Tambah Suplier</a>
   					</div>
   					<!-- /.box-header -->
-  					<div class="box-body">
+  					<div class="box-body table-responsive ">
                       <form action="<?php echo base_url().'admin/pembelian/add_to_cart'?>" method="post">
             <table style="font-size:12px;">
                 <tr>
@@ -103,8 +103,8 @@ $this->load->view('template/v_bread');
                     <th><input type="text" name="kode_brg" id="kode_brg" class="form-control input-sm"></th>                     
                 </tr>
             </table>
-            <table>
-                    <div id="detail_barang" style="position:absolute;">
+            <table class="table-responsive">
+                    <div id="detail_barang" style="position:absolute;" class="table-responsive">
                     </div>
             </table>
              </form>

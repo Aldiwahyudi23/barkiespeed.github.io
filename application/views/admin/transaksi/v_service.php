@@ -55,7 +55,7 @@ $this->load->view('template/v_bread');
   					</div>
 
   					<!-- /.box-header -->
-  					<div class="box-body">
+  					<div class="box-body table-responsive">
 					  <table class="table table-bordered table-condensed" style="font-size:11px;margin-top:10px;">
   						<table id="example1" class="table table-striped" style="font-size:11px;margin-top:10px;">
   							<thead>

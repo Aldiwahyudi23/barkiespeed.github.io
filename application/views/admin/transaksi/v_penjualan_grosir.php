@@ -68,13 +68,14 @@ $this->load->view('template/v_bread');
                 </tr>
 
             </table>
-            <table>
-                    <div id="detail_barang" style="position:absolute;">
+            <table class="table-responsive">
+                    <div id="detail_barang" style="position:absolute;" class="table-responsive">
                     </div>
             </table>
              </form>
              <br>
              <br>
+             <div class="table-responsive">
             <table class="table table-bordered table-condensed" style="font-size:12px;margin-top:10px;">
                 <thead>
                     <tr>
@@ -108,6 +109,7 @@ $this->load->view('template/v_bread');
                     <?php endforeach; ?>
                 </tbody>
             </table>
+            </div>
             <br>
             <form action="<?php echo base_url().'admin/penjualan_grosir/simpan_penjualan_grosir'?>" method="post">
             <table style="font-size:12px;">

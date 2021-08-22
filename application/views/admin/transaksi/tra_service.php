@@ -57,7 +57,7 @@ $this->load->view('template/v_bread');
                     <h3>Data Customer</h3>
   					</div>
   					<!-- /.box-header -->
-  					<div class="box-body">
+  					<div class="box-body ">
                       <form action="<?php echo base_url().'admin/transaksi/simpan_penjualan_grosir'?>" method="post">
                       <table class="table table-striped" style="font-size:12px;">
                       <?php
@@ -129,6 +129,7 @@ $nofak = $i['nofak'];
                       
                       </table>
                       <hr>
+            <div class="table-responsive">
                       <table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">
                                     
                                     <thead class="text-primary">
@@ -181,6 +182,7 @@ $nofak = $i['nofak'];
       
                                     </tbody>
                                 </table>
+                                </div>
             <table>
                 <tr>
                     <td style="width:760px;" rowspan="2"></td>

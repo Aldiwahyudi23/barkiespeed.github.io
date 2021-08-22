@@ -183,6 +183,7 @@ $nofak = $i['nofak'];
                                     </tbody>
                                 </table>
                                 </div>
+                                <div class="table-responsive">
             <table>
                 <tr>
                     <td style="width:760px;" rowspan="2"></td>
@@ -203,6 +204,7 @@ $nofak = $i['nofak'];
                 <tr>  <td style="text-align:right;width:760px;" rowspan="2"><button type="submit" target="_blank" class="btn btn-info btn-lg-23"> Bayar</button></td></tr>
 
             </table>
+      </div>
             </form>
   				<!-- /.box -->
   			</div>

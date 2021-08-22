@@ -67,7 +67,7 @@ $this->load->view('template/v_bread');
   					</div>
                 <?php } ?>
   					<!-- /.box-header -->
-  					<div class="box-body">
+  					<div class="box-body table-responsive">
                       <?php 
     $b=$jml->row_array();
 ?>

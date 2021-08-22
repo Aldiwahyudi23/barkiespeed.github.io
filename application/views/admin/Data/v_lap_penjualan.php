@@ -69,7 +69,7 @@ $this->load->view('template/v_bread');
   					</div>
                 <?php } ?>
   					<!-- /.box-header -->
-  					<div class="box-body">
+  					<div class="box-body table-responsive">
                       <table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">
                       <thead>
     <tr>

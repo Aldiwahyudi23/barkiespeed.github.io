@@ -56,7 +56,7 @@ $this->load->view('template/v_bread');
                      <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#largeModal"><span class="fa fa-plus"></span> Tambah Satuan</a>
   					</div>
   					<!-- /.box-header -->
-  					<div class="box-body">
+  					<div class="box-body table-responsive">
                       <table class="table table-bordered table-condensed" style="font-size:11px;margin-top:10px;">
                 <thead>
                     <tr>

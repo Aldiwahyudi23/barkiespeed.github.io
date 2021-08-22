@@ -71,8 +71,8 @@ $this->load->view('template/v_bread');
                     <td><input type="text" name="kode_brg" id="kode_brg" class="form-control input-sm"></td>                     
                 </tr>
             </table>
-            <table>
-                    <div id="detail_barang" style="position:absolute;">
+            <table class="table-responsive">
+                    <div id="detail_barang" style="position:absolute;" class="table-responsive">
                     </div>
 
             </table>

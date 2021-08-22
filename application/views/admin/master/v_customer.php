@@ -64,14 +64,15 @@ $this->load->view('template/v_bread');
   				<div class="box">
   				
   					<!-- /.box-header -->
-  					<div class="box-body">
-  						<table id="example1" class="table table-striped table-responsive" style="font-size:14px;">
+  					<div class="box-body table-responsive">
+  						<table id="example1" class=" table table-striped table-bordered table-hover" style="font-size:14px;">
   							<thead>
   								<tr>
   									<th style="width:70px;">No</th>
   									<th>Tanggal Post</th>
   									<th>Nama</th>
   									<th>No HP</th>
+  				
   									<th style="text-align:right;">Aksi</th>
   								</tr>
   							</thead>
@@ -98,6 +99,7 @@ foreach ($data->result_array() as $i):
 																												  										<td><?php echo $tanggal; ?></td>
 																												  										<td> <a href="customer/active/<?php echo $customer_id; ?>" class="pull-LIGHT"><small><?php echo $customer_nama; ?></td>
 																												  										<td><?php echo $nohp; ?></td>
+																												  							
 																												  										<td style="text-align:right;">
 																																						<?php if($h=='1' || $h=='2') { ?>
 																												  											<a class="btn btn-xs btn-warning" data-toggle="modal" data-target="#ModalEdit<?php echo $customer_id; ?>"><span class="fa fa-pencil"></span></a>

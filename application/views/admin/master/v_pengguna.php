@@ -48,7 +48,7 @@ $this->load->view('admin/v_menu');
                 <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-user-plus"></span> Pengguna</a>
               </div>
               <!-- /.box-header -->
-              <div class="box-body">
+              <div class="box-body table-responsive">
                 <table id="example1" class="table table-striped" style="font-size:13px;">
                   <thead>
                     <tr>

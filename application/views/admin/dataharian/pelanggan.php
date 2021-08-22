@@ -139,7 +139,7 @@ $nofak = $i['nofak'];
                       
                       </table>
                       <hr>
-
+<div class="table-responsive">
                       <table class="table table-bordered table-condensed" style="font-size:10px;" id="mydata">
                                     
                                     <thead class="text-primary">
@@ -147,6 +147,7 @@ $nofak = $i['nofak'];
                                             <th style="width:70px;">No</th>
                                             <th >Status</th>
                                             <th >Nama Barang</th>
+                                
                                               <th>Qty</th>
 
 											 
@@ -179,6 +180,7 @@ $nofak = $i['nofak'];
                                       <td><?php echo $no; ?></td>
                                       <td><?php echo $status; ?></td>
                                       <td><?php echo $d_nama; ?></td>
+                        
                                       <td><?php echo $qty; ?></td>
 
                                       <td><a href="<?php echo base_url().'admin/dataharian/edit_jual/'.$id; ?>" class="btn btn-sm btn-primary"><span class=""></span>lihat</a>
@@ -191,6 +193,7 @@ $nofak = $i['nofak'];
       
                                     </tbody>
                                 </table>
+                                </div>
                                 </form>
             <table style="font-size:14px;">
                 <tr>

@@ -83,6 +83,9 @@ $this->load->view('template/v_bread');
                         <th style="text-align:center;width:40px;">No</th>
                         <th>Kode Barang</th>
                         <th>Nama Barang</th>
+                        <th>Satuan</th>
+                        <th>Kategori</th>
+                        <th>Harga Pokok</th>
                         <th>Harga Jual</th>
                         <th>Stok</th>
                         <th style="width:100px;text-align:center;">Aksi</th>
@@ -101,11 +104,15 @@ $this->load->view('template/v_bread');
                         $min_stok=$a['barang_min_stok'];
                         $kat_id=$a['barang_kategori_id'];
                         $kat_nama=$a['kategori_nama'];
+                        $satuan=$a['barang_satuan'];
                 ?>
                     <tr>
                         <td style="text-align:center;"><?php echo $no;?></td>
                         <td><?php echo $id;?></td>
                         <td><?php echo $nm;?></td>
+                        <td><?php echo $satuan;?></td>
+                        <td><?php echo $kat_nama;?></td>
+                        <td style="text-align:light;"><?php echo 'Rp '.number_format($harpok);?></td>
                         <td style="text-align:light;"><?php echo 'Rp '.number_format($harjul_grosir);?></td>
                         <td style="text-align:center;"><?php echo $stok;?></td>
                         <td style="text-align:center;">
@@ -162,6 +169,7 @@ $this->load->view('template/v_bread');
                             <label class="control-label col-xs-3" >Kategori <span class="text-danger">*</span></label>
                             <div class="col-xs-9">
                                 <select name="kategori" class="selectpicker show-tick form-control" data-live-search="true" title="Pilih Kategori" data-width="80%" placeholder="Pilih Kategori" required>
+                                    <option></option>
                                 <?php foreach ($kat2->result_array() as $k2) {
                                     $id_kat=$k2['kategori_id'];
                                     $nm_kat=$k2['kategori_nama'];
@@ -178,6 +186,7 @@ $this->load->view('template/v_bread');
                         <label class="control-label col-xs-3" >Satuan <span class="text-danger">*</span></label>
                         <div class="col-xs-9">
                              <select name="satuan" class="selectpicker show-tick form-control" data-live-search="true" title="Pilih Satuan" data-width="80%" placeholder="Pilih Satuan" required>
+                                 <option ></option>
                              <?php foreach ($data2->result_array() as $s2) {
                                 $id_sat=$s2['satuan_id'];
                                 $nm_sat=$s2['satuan_nama'];
@@ -191,7 +200,7 @@ $this->load->view('template/v_bread');
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Harga Pokok <span class="text-danger">*</span></label>
                         <div class="col-xs-9">
-                            <input name="harpok" class="harpok form-control" type="text" placeholder="Harga Pokok...">
+                            <input name="harpok" class="harpok form-control" type="text" placeholder="Harga Pokok..."  required>
                         </div>
                     </div>
 
@@ -200,21 +209,21 @@ $this->load->view('template/v_bread');
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Harga Jual <span class="text-danger">*</span></label>
                         <div class="col-xs-9">
-                            <input name="harjul_grosir" class="harjul form-control" type="text" placeholder="Harga Jual...">
+                            <input name="harjul_grosir" class="harjul form-control" type="text" placeholder="Harga Jual..."  required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Stok <span class="text-danger">*</span></label>
                         <div class="col-xs-9">
-                            <input name="stok" class="form-control" type="number" placeholder="Stok...">
+                            <input name="stok" class="form-control" type="number" placeholder="Stok..." value="0">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Minimal Stok <span class="text-danger">*</span> </label>
                         <div class="col-xs-9">
-                            <input name="min_stok" class="form-control" type="number" placeholder="Minimal Stok...">
+                            <input name="min_stok" class="form-control" type="number" placeholder="Minimal Stok..."  required>
                         </div>
                     </div>
                            

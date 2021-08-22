@@ -78,11 +78,13 @@ class Dataharian extends CI_Controller{
 			$level = '0';
 			$nohp = $this->input->post('xnohp');
 			$nopol = $this->input->post('xnopol');
+			$kode1 = $this->input->post('kode1');
+			$kode3 = $this->input->post('kode3');
 			$kendaraan = $this->input->post('xkendaraan');
 			$type = $this->input->post('xtype');
 			$km = $this->input->post('xkm');
 			$password = '123456';
-			$this->m_customer->simpan_customer($nofak,$nama_customer, $keluhan, $mulai, $selesai, $alamat, $keterangan, $level, $nohp, $nopol, $kendaraan, $type, $km, $password,$slug);
+			$this->m_customer->simpan_customer($nofak,$nama_customer, $keluhan, $mulai, $selesai, $alamat, $keterangan, $level, $nohp, $nopol, $kode1, $kode3, $kendaraan, $type, $km, $password,$slug);
 			echo $this->session->set_flashdata('msg', 'success');
 			redirect('admin/dataharian');
 		}else{

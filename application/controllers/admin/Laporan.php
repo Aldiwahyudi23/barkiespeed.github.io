@@ -121,9 +121,9 @@ class Laporan extends CI_Controller{
 		if($this->session->userdata('akses')=='1' || $this->session->userdata('akses')=='2' ){
 			$x['iden'] = $this->m_identitas->get_all_identitas();
 		$tanggal=$this->input->post('tgl');
-		$x['jml']=$this->m_laporan->get_data__total_jual_pertanggal($tanggal);
-		$x['data']=$this->m_laporan->get_data_jual_pertanggal($tanggal);
-		$this->load->view('admin/laporan/v_lap_jual_pertanggal',$x);
+		$x['jml']=$this->m_laporan->get_data__total_beli_pertanggal($tanggal);
+		$x['data']=$this->m_laporan->get_data_beli_pertanggal($tanggal);
+		$this->load->view('admin/laporan/v_lap_beli_pertanggal',$x);
 	}else{
         echo $this->session->set_flashdata('msg', 'danger');
 		redirect('admin/laporan');

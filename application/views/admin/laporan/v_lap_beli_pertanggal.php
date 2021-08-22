@@ -38,7 +38,7 @@
 <table border="1" align="center" style="width:900px;margin-bottom:20px;">
 <thead>
 <tr>
-<th colspan="11" style="text-align:left;">Tanggal : <?php echo $b['jual_tanggal'];?></th>
+<th colspan="11" style="text-align:left;">Tanggal : <?php echo $b['beli_tanggal'];?></th>
 </tr>
 <tr>
         <th style="width:50px;">No</th>

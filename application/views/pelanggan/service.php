@@ -152,6 +152,7 @@ $satus = $i['deskripsi'];
                                         <tr>
                                             <th style="width:70px;">No</th>
                                             <th >Keterangan</th>
+                                            <th style="width:300px;">Catatan</th>
                                             <th >Nama Barang</th>
                                               <th >Harga</th>
                                               <th>Qty</th>
@@ -177,13 +178,15 @@ $satus = $i['deskripsi'];
           $nopol = $i['nopol'];
           $d_nama = $i['d_jual_barang_nama'];
           $satuan = $i['d_jual_barang_satuan'];
-		  $ket = $i['proses'];
+		  $proses = $i['proses'];
+          $ket = $i['keterangan'];
           $satus = $i['deskripsi'];
       
       
           ?>
                                     <tr>
                                       <td><?php echo $no; ?></td>
+                                      <td><?php echo $proses; ?></td>
                                       <td><?php echo $ket; ?></td>
                                       <td><?php echo $d_nama; ?></td>
                                       <td>Rp. <?php echo number_format ($harjul); ?></td>

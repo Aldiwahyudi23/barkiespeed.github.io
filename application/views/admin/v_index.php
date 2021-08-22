@@ -143,7 +143,7 @@ $jml = $query->num_rows();
           <!-- Left col -->
           <div class="col-md-8">
             <!-- MAP & BOX PANE -->
-            <div class="box box-success">
+            <div class="box box-success table-responsive">
               <div class="box-header with-border">
                 <h3 class="box-title">Pelanggan</h3>
 

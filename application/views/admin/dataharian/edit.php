@@ -117,7 +117,7 @@ $this->load->view('template/v_bread');
                             <tr>
                                 <td><strong>Keterangan</strong></td>
                                 <td>:</td>
-                                <td>	<textarea class="form-control" rows="3" name="ket" placeholder="Deskripsi ..." required><?php echo $ket; ?></textarea>
+                                <td>	<textarea class="form-control" rows="3" name="ket" placeholder="Deskripsi ..." ><?php echo $ket; ?></textarea>
                                 
                                 </td>
                                 </tr>

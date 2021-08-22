@@ -76,6 +76,8 @@ $customer_author = $i['userid'];
 $tangal = $i['tanggal'];
 $nohp = $i['nohp'];
 $nopol = $i['nopol'];
+$kode1 = $i['kode1'];
+$kode3 = $i['kode3'];
 $kendaraan = $i['kendaraan'];
 $type = $i['type'];
 $km = $i['km'];
@@ -104,6 +106,11 @@ $nofak = $i['nofak'];
                                 <td><?php echo $customer_alamat; ?></td>
                             </tr>
                             <tr>
+                            <td><strong>No HP</strong></td>
+                            <td>:</td>
+                            <td><?php echo $nohp; ?></td>
+                        </tr>
+                            <tr>
 
                                 <td><strong>Tanggal Input</strong></td>
                                 <td>:</td>
@@ -112,13 +119,8 @@ $nofak = $i['nofak'];
                             <tr>
                                 <td><strong>No Polisi</strong></td>
                                 <td>:</td>
-                                <td><?php echo $nopol; ?></td>
+                                <td><?php echo $kode1; ?> <?php echo $nopol; ?> <?php echo $kode3; ?></td>
                                 </tr>
-                                <tr>
-                                <td><strong>No HP</strong></td>
-                                <td>:</td>
-                                <td><?php echo $nohp; ?></td>
-                            </tr>
                             <tr>
                                 <td><strong>Kendaraan</strong></td>
                                 <td>:</td>

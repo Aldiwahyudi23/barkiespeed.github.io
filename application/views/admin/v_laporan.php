@@ -132,13 +132,7 @@ $this->load->view('template/v_bread');
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="text-align:center;vertical-align:middle">8</td>
-                        <td style="vertical-align:middle;">Laporan Retur</td>
-                        <td style="text-align:center;">
-                            <a target="_blank" class="btn btn-sm btn-default" href="<?php echo base_url().'admin/laporan/lap_retur'?>" data-toggle="modal"><span class="fa fa-print"></span> Print</a>
-                        </td>
-                    </tr>
+                    
               
                 </tbody>
             </table>

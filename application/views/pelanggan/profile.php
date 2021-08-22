@@ -99,6 +99,7 @@ $c = $q->row_array();
 <!-- /.container-fluid -->
 
 </div>
+<div class="box-body table-responsive">
 <form action="<?php echo base_url().'pelanggan/profile/edit'?>" method="post">
                       <table class="table table-striped" style="font-size:12px;">
                       <?php
@@ -123,6 +124,8 @@ $tanggal = $i['tanggal'];
 $nohp = $i['nohp'];
 $nofak = $i['nofak'];
 $photo = $i['photo'];
+$kode1 = $i['kode1'];
+$kode3 = $i['kode3'];
 $pengguna_id = $i['id'];
 $pengguna_nama = $i['nama'];
 $pengguna_jenkel = $i['jenkel'];
@@ -165,7 +168,7 @@ $pengguna_alamat = $i['alamat'];
                             <tr>
                                 <td><strong>No Polisi</strong></td>
                                 <td>:</td>
-                                <td><?php echo $nopol; ?></td>
+                                <td><?php echo $kode1; ?> <?php echo $nopol; ?> <?php echo $kode3; ?></td>
                                 </tr>
                             <tr>
                                 <td><strong>Kendaraan</strong></td>

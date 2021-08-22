@@ -54,9 +54,9 @@ $this->load->view('template/v_bread');
 
       <?php if($h=='1'|| $h=='2'){ ?>
 			  <div class="alert alert-warning">
-              <h4><i class="fa fa-warning"></i> Perhatian!</h4> Perhatikan Stok barang.
+              <h4><i class="fa fa-warning"></i> Perhatian!</h4> Pelanggan yang pernah masuk ke bengkel,
               <br>
-              <p>Sebelum menyimpan data barang harap isi data dengan benar</p>
+              <p>Di urutkan berdasarkan no faktur pada saat proses perbaikan atau perawatan. Untuk mengaktifkan akun pelanggan klik tombol button biru</p>
 			  </div>
 		  <?php }?>
   			<div class="box">
@@ -70,8 +70,12 @@ $this->load->view('template/v_bread');
   								<tr>
   									<th style="width:70px;">No</th>
   									<th>Tanggal Post</th>
+  									<th>No Faktur</th>
   									<th>Nama</th>
   									<th>No HP</th>
+  									<th>No Polisi</th>
+  									<th>Kendaraan</th>
+  									<th>Keluhan</th>
   				
   									<th style="text-align:right;">Aksi</th>
   								</tr>
@@ -89,16 +93,23 @@ foreach ($data->result_array() as $i):
 	$customer_author = $i['userid'];
 	$tanggal = $i['tanggal'];
 	$nohp = $i['nohp'];
+	$kendaraan = $i['kendaraan'];
 	$nofak = $i['nofak'];
 	$nopol = $i['nopol'];
+	$kode1 = $i['kode1'];
+	$kode3 = $i['kode3'];
 	$level = $i['level'];
 
 	?>
 																												  									<tr>
 																												  										<td><?php echo $no; ?></td>
 																												  										<td><?php echo $tanggal; ?></td>
-																												  										<td> <a href="customer/active/<?php echo $customer_id; ?>" class="pull-LIGHT"><small><?php echo $customer_nama; ?></td>
+																												  										<td><?php echo $nofak; ?></td>
+																												  										<td> <a href="customer/active/<?php echo $nopol; ?>" class="pull-LIGHT"><small><?php echo $customer_nama; ?></td>
 																												  										<td><?php echo $nohp; ?></td>
+																												  										<td><?php echo $kode1; ?> <?php echo $nopol; ?> <?php echo $kode3; ?></td>
+																												  										<td><?php echo $kendaraan; ?></td>
+																												  										<td><?php echo $customer_keluhan; ?></td>
 																												  							
 																												  										<td style="text-align:right;">
 																																						<?php if($h=='1' || $h=='2') { ?>
@@ -342,30 +353,23 @@ foreach ($data->result_array() as $i):
 									              <input type="email" name="xemail" rm-control" value="<?php echo $pengguna_email; ?>" id="inputEmail3" placeholder="Email" required>
 									            </div>
 									          </div>
-									          <div class="form-group">
-									            <label for="inputUserName" class="col-sm-4 control-label">Jenis Kelamin</label>
-									            <div class="col-sm-7">
-									              <?php if ($pengguna_jenkel == 'Laki-Laki'): ?>
-									               <div class="radio radio-info radio-inline">
-									                <input type="radio" id="inlineRadio1" value="L" name="xjenkel" checked>
-									                <label for="inlineRadio1"> Laki-Laki </label>
-									              </div>
-									              <div class="radio radio-info radio-inline">
-									                <input type="radio" id="inlineRadio1" value="P" name="xjenkel">
-									                <label for="inlineRadio2"> Perempuan </label>
-									              </div>
-									              <?php else: ?>
-               <div class="radio radio-info radio-inline">
-                <input type="radio" id="inlineRadio1" value="L" name="xjenkel">
-                <label for="inlineRadio1"> Laki-Laki </label>
-              </div>
-              <div class="radio radio-info radio-inline">
-                <input type="radio" id="inlineRadio1" value="P" name="xjenkel" checked>
-                <label for="inlineRadio2"> Perempuan </label>
-              </div>
-            <?php endif;?>
-          </div>
-        </div>
+											  <div class="form-group">
+												<label for="inputUserName" class="col-sm-4 control-label">Status</label>
+												<div class="col-sm-7">
+													<select class="form-control" name="xjenkel" required>
+													<?php if ($pengguna_jengkel == 'P'): ?>
+													<option value="P" selected>Perempuan</option>
+													<option value="L">Laki-Laki</option>
+													<?php else: ?>
+														<option value="P">Perempuan</option>
+														<option value="L" selected>Laki-Laki</option>
+
+
+													<?php endif;?>
+													</select>
+												</div>
+												</div>
+
         <div class="form-group">
           <label for="inputUserName" class="col-sm-4 control-label">Username</label>
           <div class="col-sm-7">
@@ -417,7 +421,7 @@ foreach ($data->result_array() as $i):
 
       </div>
       <div class="modal-footer">
-		  <a class="btn btn-xs btn-success" href="customer/cart/<?php echo ($pengguna_id); ?>" ><span class="fa fa-whatsapp"></span> Kirim</a>
+		  <a class="btn btn-xs btn-success" href="customer/cart/<?php echo ($pengguna_id); ?>" ><span class="fa fa-print"></span> Print</a>
         <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary btn-flat" id="simpan">Update</button>
       </div>

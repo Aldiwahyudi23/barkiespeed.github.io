@@ -62,7 +62,7 @@ $this->load->view('template/v_bread');
   				<div class="box">
                   <?php if($h =='1' || $h == '2') {?>
   					<div class="box-header">
-                      <a class="btn btn-sm btn-default" href="#lap_jual_pertanggal" data-toggle="modal"><span class="fa fa-edit"></span> Pertanggal</a>
+                      <a class="btn btn-sm btn-default" href="#lap_beli_pertanggal" data-toggle="modal"><span class="fa fa-edit"></span> Pertanggal</a>
                       <a class="btn btn-sm btn-primary" href="#lap_jual_perbulan" data-toggle="modal"><span class="fa fa-edit"></span> Perbulan</a>
                       <a class="btn btn-sm btn-success" href="#lap_jual_pertahun" data-toggle="modal"><span class="fa fa-edit"></span> Pertahun</a>
                     
@@ -294,7 +294,7 @@ $no=0;
 	
 
      <!-- ============ MODAL ADD =============== -->
-	 <div class="modal fade" id="lap_jual_pertanggal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+	 <div class="modal fade" id="lap_beli_pertanggal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">

@@ -78,7 +78,7 @@ $this->load->view('template/v_bread');
   									<th>No Faktur</th>
   									<th>Nama</th>
   									<th>Kendaraan</th>
-  									<th>nopo</th>
+  									<th>No Polisi</th>
   									<th style="text-align:light;">Aksi</th>
   								</tr>
   							</thead>
@@ -100,6 +100,8 @@ foreach ($data->result_array() as $i):
 	$tangal = $i['tanggal'];
 	$nohp = $i['nohp'];
 	$nopol = $i['nopol'];
+	$kode1 = $i['kode1'];
+	$kode3 = $i['kode3'];
 	$kendaraan = $i['kendaraan'];
 	$type = $i['type'];
 	$km = $i['km'];
@@ -111,7 +113,7 @@ foreach ($data->result_array() as $i):
 																												  										<td><a href="dataharian/pelanggan/<?php echo $nofak; ?>" class="pull-LIGHT"><small><?php echo $nofak; ?></td>
 																												  										<td> <?php echo $customer_nama; ?></td>
 																												  										<td><?php echo $kendaraan; ?></td>
-																												  										<td><?php echo $nopol; ?></td>
+																												  										<td><?php echo $kode1; ?> <?php echo $nopol; ?> <?php echo $kode3; ?></td>
 																												  								
 																												  										<td style="text-align:light;">
 																																						  <a class="btn btn-xs btn-warning" href="<?php echo base_url().'admin/dataharian/pelanggan/'.$nofak; ?>" title="Edit"><span class=""></span> Lihat</a>
@@ -165,9 +167,21 @@ foreach ($data->result_array() as $i):
 						</div>
 					</div>
 					<div class="form-group">
+						<label for="inputUserName" class="col-sm-4 control-label">Kode plat</label>
+						<div class="col-sm-7">
+							<input type="text" name="kode1" class="form-control" id="inputUserName" placeholder="B atau D" required>
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="inputUserName" class="col-sm-4 control-label">No Polisi</label>
 						<div class="col-sm-7">
-							<input type="text" name="xnopol" class="form-control" id="inputUserName" placeholder="B 4719 UR" required>
+							<input type="text" name="xnopol" class="form-control" id="inputUserName" placeholder="4719" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputUserName" class="col-sm-4 control-label">Huruf Terakhir</label>
+						<div class="col-sm-7">
+							<input type="text" name="kode3" class="form-control" id="inputUserName" placeholder="UR" required>
 						</div>
 					</div>
 					<div class="form-group">

@@ -64,7 +64,7 @@ $this->load->view('template/v_bread');
   									<th>Tanggal Post</th>
   									<th>Nama</th>
   									<th>Kendaraan</th>
-  									<th>Nopol</th>
+  									<th>No Polisi</th>
   									<th style="text-align:right;">Aksi</th>
   								</tr>
   							</thead>
@@ -84,6 +84,8 @@ foreach ($data->result_array() as $i):
 	$tangal = $i['tanggal'];
 	$nohp = $i['nohp'];
 	$nopol = $i['nopol'];
+	$kode1 = $i['kode1'];
+	$kode3 = $i['kode3'];
 	$kendaraan = $i['kendaraan'];
 	$type = $i['type'];
 	$km = $i['km'];
@@ -98,7 +100,7 @@ foreach ($data->result_array() as $i):
 																												  										<td><?php echo $customer_nama; ?></td>
 																												  										<td><?php echo $type;?>-<?php echo $kendaraan; ?></td>
 																												  						
-																												  										<td><?php echo $nopol; ?></td>
+																												  										<td><?php echo $kode1; ?> <?php echo $nopol; ?> <?php echo $kode3; ?></td>
 																												  										<td style="text-align:right;">
                                                                                                                                                           <a class="btn btn-xs btn-warning" href="transaksi/service/<?php echo $nofak; ?>" title="Bayar"><span class="fa fa-print"></span> <?php echo $keterangan; ?></a>
 										

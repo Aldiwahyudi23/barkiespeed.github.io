@@ -55,11 +55,11 @@ class M_customer extends CI_Model {
 	}
 
 	function get_all_customer_active() {
-		$hsl = $this->db->query("SELECT tb_customer.id, tb_customer.nofak,tb_customer.nama, tb_customer.tanggal, tb_customer.keluhan, tb_customer.startdate, tb_customer.enddate, tb_customer.alamat, tb_customer.ket, tb_customer.nohp, tb_customer.nopol, tb_customer.kendaraan, tb_customer.type, tb_customer.km, tbl_user.nama as userid,DATE_FORMAT(tanggal,'%d/%m/%Y') AS tanggal1 FROM tb_customer INNER JOIN tbl_user on tb_customer.userid = tbl_user.id  WHERE ket = 'Masuk' ORDER BY ket ASC");
+		$hsl = $this->db->query("SELECT tb_customer.id, tb_customer.nofak,tb_customer.nama, tb_customer.tanggal, tb_customer.keluhan, tb_customer.startdate, tb_customer.enddate, tb_customer.alamat, tb_customer.ket, tb_customer.nohp, tb_customer.nopol , tb_customer.kode1 , tb_customer.kode3, tb_customer.kendaraan, tb_customer.type, tb_customer.km, tbl_user.nama as userid,DATE_FORMAT(tanggal,'%d/%m/%Y') AS tanggal1 FROM tb_customer INNER JOIN tbl_user on tb_customer.userid = tbl_user.id  WHERE ket = 'Masuk' ORDER BY ket ASC");
 		return $hsl;
 	}
 	function get_all_customer_selesai() {
-		$hsl = $this->db->query("SELECT tb_customer.id, tb_customer.nofak,tb_customer.nama, tb_customer.tanggal, tb_customer.keluhan, tb_customer.startdate, tb_customer.enddate, tb_customer.alamat, tb_customer.ket, tb_customer.nohp, tb_customer.nopol, tb_customer.kendaraan, tb_customer.type, tb_customer.km, tbl_user.nama as userid,DATE_FORMAT(tanggal,'%d/%m/%Y') AS tanggal1 FROM tb_customer INNER JOIN tbl_user on tb_customer.userid = tbl_user.id  WHERE ket = 'bayar' ORDER BY ket ASC");
+		$hsl = $this->db->query("SELECT tb_customer.id, tb_customer.nofak,tb_customer.nama, tb_customer.tanggal, tb_customer.keluhan, tb_customer.startdate, tb_customer.enddate, tb_customer.alamat, tb_customer.ket, tb_customer.nohp, tb_customer.nopol , tb_customer.kode1, tb_customer.kode3, tb_customer.kendaraan, tb_customer.type, tb_customer.km, tbl_user.nama as userid,DATE_FORMAT(tanggal,'%d/%m/%Y') AS tanggal1 FROM tb_customer INNER JOIN tbl_user on tb_customer.userid = tbl_user.id  WHERE ket = 'bayar' ORDER BY ket ASC");
 		return $hsl;
 	}
 	
@@ -68,9 +68,9 @@ class M_customer extends CI_Model {
 
 
 
-	function simpan_customer($nofak,$nama_customer, $keluhan, $mulai, $selesai, $alamat, $keterangan, $level, $nohp, $nopol,$kendaraan, $type, $km, $password,$slug) {
+	function simpan_customer($nofak,$nama_customer, $keluhan, $mulai, $selesai, $alamat, $keterangan, $level, $nohp, $nopol, $kode1, $kode3,$kendaraan, $type, $km, $password,$slug) {
 		$author = $this->session->userdata('idadmin');
-		$hsl = $this->db->query("INSERT INTO tb_customer(nofak,nama,keluhan,startdate,enddate,alamat,ket,level,nohp,nopol,kendaraan,type,km,password,userid,slug) VALUES ('$nofak','$nama_customer','$keluhan','$mulai','$selesai','$alamat','$keterangan','$level','$nohp','$nopol','$kendaraan','$type','$km',md5('$password'),'$author', '$slug')");
+		$hsl = $this->db->query("INSERT INTO tb_customer(nofak,nama,keluhan,startdate,enddate,alamat,ket,level,nohp,nopol,kode1,kode3,kendaraan,type,km,password,userid,slug) VALUES ('$nofak','$nama_customer','$keluhan','$mulai','$selesai','$alamat','$keterangan','$level','$nohp','$nopol','$kode1','$kode3','$kendaraan','$type','$km',md5('$password'),'$author', '$slug')");
 		return $hsl;
 	}
 	function update_finis($ket,$nofak) {

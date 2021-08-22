@@ -80,7 +80,7 @@ $this->load->view('template/v_bread');
             <br>
             <br>
              <form action="<?php echo base_url().'admin/dataharian/simpan_penjualan_grosir'?>" method="post">
-             <div class="modal-body">     
+             <div class="modal-body table-responsive">     
 
             <table class="table table-bordered table-condensed" style="font-size:11px;margin-top:10px;">
                 <thead>

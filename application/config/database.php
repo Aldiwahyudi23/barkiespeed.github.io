@@ -75,17 +75,17 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn' => '',
-/*
+
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'barkiespeed',
-*/
+/*
 	'hostname' => 'srv92.niagahoster.com',
 	'username' => 'u1021663_barkiespeed',
 	'password' => 'barkiespeed237',
 	'database' => 'u1021663_barkiespeed',
-
+*/
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

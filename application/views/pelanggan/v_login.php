@@ -13,7 +13,7 @@
 		<link href="<?php echo base_url().'assets/css/stylesl.css'?>" rel="stylesheet">
 		<style>
 		.masuk-bg {
-			background-image: url(http://localhost/barkiespeed/assetss/images/air-jernih.jpg);
+			background-image: url(http://localhost/barkiespeed/assetss/images/back.jpg);
 		}
 		</style>
    
@@ -35,8 +35,8 @@
 	                        	<input class="form-control" type="text" name="username" placeholder="No Faktur" required>
 				                <input class="form-control" type="password" name="password" placeholder="Kata Sandi" style="margin-bottom:1px;" required>
 				                <div class="action">
-				                    <button type="submit" class="btn btn-lg btn-success " style="width:250px;margin-bottom:30px;">MASUK</button>
-									<a href="<?php echo base_url('beranda')?>')">Kembali</a>
+				                    <button type="submit" class="btn btn-lg btn-success " style="width:200px;margin-bottom:30px;">MASUK</button>
+									
 				                </div>
 	                        </form>
 								    

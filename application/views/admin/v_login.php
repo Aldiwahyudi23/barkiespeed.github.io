@@ -35,7 +35,7 @@
 	                        	<input class="form-control" type="text" name="username" placeholder="Nama Pengguna" required>
 				                <input class="form-control" type="password" name="password" placeholder="Kata Sandi" style="margin-bottom:1px;" required>
 				                <div class="action">
-				                    <button type="submit" class="btn btn-lg btn-danger " style="width:200px;margin-bottom:30px;">MASUK</button>
+				                    <button type="submit" class="btn btn-lg btn-danger " style="width:150px;margin-bottom:30px;">MASUK</button>
 				                </div>
 	                        </form>
 			                                
